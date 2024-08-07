@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloves Slider</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #container {
+            width: 80%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #slider-container {
+            display: flex;
+            align-items: center;
+        }
+
+        #slider {
+            display: flex;
+            width: 100%;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .slide img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .slide p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .btn {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="slider-container">
+            <span onclick="slideLeft()" class="btn">&#9664;</span>
+            <div id="slider">
+                <div class="slide">
+                    <div>
+                        <img src="./assets/img/img1.jpeg" alt="Gloves Image 1">
+                    </div>
+                    <div>
+                        <p>High-quality gloves designed for optimal comfort and protection. Perfect for industrial use.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div>
+                        <img src="./assets/img/img1.jpeg" alt="Gloves Image 2">
+                    </div>
+                    <div>
+                        <p>Durable and reliable gloves that offer excellent grip and dexterity.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div>
+                        <img src="./assets/img/img1.jpeg" alt="Gloves Image 3">
+                    </div>
+                    <div>
+                        <p>Ergonomically designed gloves to reduce hand fatigue during prolonged use.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div>
+                        <img src="./assets/img/img1.jpeg" alt="Gloves Image 4">
+                    </div>
+                    <div>
+                        <p>Weather-resistant gloves suitable for various outdoor activities.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div>
+                        <img src="./assets/img/img1.jpeg" alt="Gloves Image 5">
+                    </div>
+                    <div>
+                        <p>Lightweight gloves providing maximum flexibility and comfort.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div>
+                        <img src="./assets/img/img1.jpeg" alt="Gloves Image 6">
+                    </div>
+                    <div>
+                        <p>High-performance gloves ideal for demanding tasks.</p>
+                    </div>
+                </div>
+            </div>
+            <span onclick="slideRight()" class="btn">&#9654;</span>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
