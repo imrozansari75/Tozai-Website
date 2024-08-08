@@ -21,7 +21,7 @@
     <header class="header">
         <nav class="nav container">
             <div class="nav__data">
-                <a href="./index.html" class="nav__logo">
+                <a href="#hero-section" class="nav__logo">
                     <img class="w-[8rem] sm:w-[9rem]" src="./assets/img/Tozai Safety.jpg" alt="Tozai Safety Logo">
                 </a>
 
@@ -36,18 +36,15 @@
                 <ul class="nav__list">
                     <li><a href="./index.html" class="nav__link">Home</a></li>
 
-                    <li><a href="#about-container" class="nav__link">About us</a></li>
+                    <li><a href="#aboutUs" class="nav__link">About us</a></li>
 
-                    <!--=============== DROPDOWN ===============-->
                     <li class="dropdown__item">
-                        <a href="#services">
+                        <a href="#container">
                             <div class="nav__link">
                                 Products
                             </div>
                         </a>
                     </li>
-
-                    <!--=============== DROPDOWN END ===============-->
 
                     <li class="dropdown__item">
                         <a href="#careers">
@@ -65,7 +62,7 @@
 
     <main>
         <!-- Home Page -->
-        <section class="hero_section flex flex-col sm:flex-row justify-between items-center">
+        <section id="hero-section" class="hero_section flex flex-col sm:flex-row justify-between items-center">
 
             <div class="mb-8 md:mb-0 p-8 md:p-20">
                 <h1
@@ -79,15 +76,16 @@
             </div>
 
             <div class="hero__img">
-                <img src="./assets/img/hero.avif" class="sm:h-[calc(100vh-5rem)] w-[100vw] sm:p-0 p-2 object-cover sm:w-[76vw]"
-                    alt="Worker with PPE">
+                <img src="https://i.pinimg.com/564x/fa/82/ea/fa82ea06a3384c0df5a006108edd1c08.jpg"
+                    class="sm:h-[calc(100vh-5rem)] w-[100vw] sm:p-0 p-2 object-cover object-right sm:w-[76vw]" alt="Worker with PPE">
             </div>
         </section>
 
         <!-- About Page -->
-        <section class="flex flex-col md:flex-row items-center">
+        <section id="aboutUs" class="flex flex-col md:flex-row items-center">
             <div>
-                <img src="./assets/img/hero.avif" alt="Worker with PPE" class="sm:h-[100vh] w-[100vw] sm:p-0 p-2 object-cover sm:w-[40vw]">
+                <img src="https://media.licdn.com/dms/image/D4E22AQE0_RaO6Pz76Q/feedshare-shrink_1280/0/1722246251673?e=1726099200&v=beta&t=ZCulZwqqNo17_wFUsM7gnz1oH5ewshrdIgsH5BialhI" alt="Worker with PPE"
+                    class="sm:h-[100vh] w-[100vw] sm:p-0 p-2 object-fill sm:w-[40vw]">
             </div>
             <div class="md:w-2/3 mb-8 md:mb-0 p-8 md:p-16">
                 <h1 class="text-5xl font-medium font-dmsans mb-4">About Us</h1>
@@ -118,22 +116,26 @@
         </section>
 
         <!-- Poduct by industries -->
-        <section id="container" class="rounded-md">
-            <div class="text-center text-[48px] px-6 pt-16 sm:text-6xl font-medium font-dmsans">
+        <!-- <section id="container" class="rounded-md">
+            <div class="text-center text-[48px] px-6 sm:mt-5 pt-16 sm:text-6xl font-medium font-dmsans">
                 <h1 class="leading-tight">Products by Industries</h1>
             </div>
             <div id="slider-container" class="h-[500px] w-[85vw] ">
                 <span onclick="slideRight()" class="btn"></span>
                 <div id="slider">
 
-                    <div class="slide bg-[#F9F8F5]">
+                    <div class="slide bg-white rounded-md">
                         <div class="p-3">
                             <img src="./assets/img/img1.jpeg" class="rounded-md object-cover" alt="">
                         </div>
                         <div class="p-3">
                             <h3 class="sm:text-[1.5rem] font-dmsans">Construction</h3>
                             <p class="sm:text-[1rem] font-inter">
-                                Our construction gloves are built for durability and protection in demanding environments. Made from heavy-duty materials, these gloves offer excellent abrasion resistance and impact protection, ensuring safety when handling tools, materials, and rough surfaces. Ideal for construction workers, they provide a secure grip and comfort throughout long workdays.
+                                Our construction gloves are built for durability and protection in demanding
+                                environments. Made from heavy-duty materials, these gloves offer excellent abrasion
+                                resistance and impact protection, ensuring safety when handling tools, materials, and
+                                rough surfaces. Ideal for construction workers, they provide a secure grip and comfort
+                                throughout long workdays.
                             </p>
                         </div>
                     </div>
@@ -145,7 +147,10 @@
                         <div class="p-3">
                             <h3 class="text-[1.5rem] font-dmsans">Oil and Gas</h3>
                             <p class="text-[1rem] font-inter">
-                                Designed to withstand extreme conditions, our oil and gas gloves offer superior protection against oils, chemicals, and high temperatures. Featuring reinforced palms and fingers, these gloves ensure a strong grip and enhanced durability, making them essential for tasks involving slippery and hazardous substances.
+                                Designed to withstand extreme conditions, our oil and gas gloves offer superior
+                                protection against oils, chemicals, and high temperatures. Featuring reinforced palms
+                                and fingers, these gloves ensure a strong grip and enhanced durability, making them
+                                essential for tasks involving slippery and hazardous substances.
                             </p>
                         </div>
                     </div>
@@ -157,7 +162,10 @@
                         <div class="p-3">
                             <h3 class="text-[1.5rem] font-dmsans">Chemical Manufacturing Gloves</h3>
                             <p class="text-[1rem] font-inter">
-                                Engineered for protection against a wide range of chemicals, our chemical manufacturing gloves are crafted from high-quality, resistant materials. They provide excellent barrier properties and dexterity, making them ideal for handling hazardous substances and ensuring safety in chemical processing environments.
+                                Engineered for protection against a wide range of chemicals, our chemical manufacturing
+                                gloves are crafted from high-quality, resistant materials. They provide excellent
+                                barrier properties and dexterity, making them ideal for handling hazardous substances
+                                and ensuring safety in chemical processing environments.
                             </p>
                         </div>
                     </div>
@@ -169,7 +177,10 @@
                         <div class="p-3">
                             <h3 class="text-[1.5rem] font-dmsans">Mining Gloves</h3>
                             <p class="text-[1rem] font-inter">
-                                Our manufacturing gloves are designed for safety and comfort in industrial settings. They offer protection from machinery, sharp objects, and heavy materials, with features like reinforced areas and ergonomic designs to ensure maximum dexterity and grip for workers on the production line.
+                                Our manufacturing gloves are designed for safety and comfort in industrial settings.
+                                They offer protection from machinery, sharp objects, and heavy materials, with features
+                                like reinforced areas and ergonomic designs to ensure maximum dexterity and grip for
+                                workers on the production line.
                             </p>
                         </div>
                     </div>
@@ -229,44 +240,44 @@
                 </div>
                 <span onclick="slideLeft()" class="btn"></span>
             </div>
-        </section>
+        </section> -->
 
         <!-- Career Section -->
-        <section class="pt-20 sm:px-16 items-center">
-            <h1 class="text-[3.5rem] font-medium font-dmsans mb-0">Careers</h1>
-            <p class="mb-8 text-gray-700 text-[21px] font-inter">Join our team of passionate professionals dedicated to
-                ensuring safety in the workplace. Contact us at<br><b>talent@texbrex.com</b> to know about opportunities
+        <section id="careers" class="sm:pt-20 p-8 sm:px-16 items-center">
+            <h1 class="text-[2.5rem] sm:text-[3.5rem] font-medium font-dmsans mb-0 pt-4">Careers</h1>
+            <p class="mb-8 text-[18px] text-gray-700 sm:text-[21px] font-inter">Join our team of passionate professionals dedicated to
+                ensuring safety in the workplace. Contact us at<br><b class="text-red-500"> <a href="mailto:talent@texbrex.com">talent@texbrex.com</a></b> to know about opportunities
                 at Tozai Safety.</p>
             <div class="flex flex-wrap justify-between space-y-6 md:space-y-0">
                 <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-left">
                     <div class="flex flex-col items-start mb-4">
-                        <i class="fa-solid fa-chart-line text-5xl text-black mb-4"></i>
-                        <h3 class="mb-2 text-[1.6rem] font-dmsans font-medium">Career Growth</h3>
-                        <p class="text-gray-600 text-[1.3rem] font-inter">We provide opportunities for professional
+                        <i class="fa-solid fa-chart-line text-5xl text-black mb-2 sm:mb-4"></i>
+                        <h3 class="mb-0 sm:mb-2 text-[1.6rem] font-dmsans font-medium">Career Growth</h3>
+                        <p class="text-gray-600 text-[18px] sm:text-[1.3rem] font-inter">We provide opportunities for professional
                             development and advancement.</p>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-left">
                     <div class="flex flex-col items-start mb-4">
-                        <i class="fa-solid fa-people-group text-5xl text-black mb-4"></i>
-                        <h3 class="text-[1.6rem] font-dmsans font-medium mb-2">Teamwork</h3>
-                        <p class="text-gray-600 text-[1.3rem] font-inter">We foster a collaborative and supportive work
+                        <i class="fa-solid fa-people-group text-5xl text-black mb-2 sm:mb-4"></i>
+                        <h3 class="text-[1.6rem] font-dmsans font-medium mb-0 sm:mb-2">Teamwork</h3>
+                        <p class="text-gray-600 text-[18px] sm:text-[1.3rem] font-inter">We foster a collaborative and supportive work
                             environment.</p>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-left">
                     <div class="flex flex-col items-start mb-4">
-                        <i class="fa-regular fa-lightbulb text-5xl text-black mb-4"></i>
-                        <h3 class="text-[1.6rem] font-dmsans font-medium mb-2">Innovation</h3>
-                        <p class="text-gray-600 text-[1.3rem] font-inter">We encourage creativity and innovation to
+                        <i class="fa-regular fa-lightbulb text-5xl text-black mb-2 sm:mb-4"></i>
+                        <h3 class="text-[1.6rem] font-dmsans font-medium mb-0 sm:mb-2">Innovation</h3>
+                        <p class="text-gray-600 text-[18px] sm:text-[1.3rem] font-inter">We encourage creativity and innovation to
                             enhance safety solutions.</p>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-left">
                     <div class="flex flex-col items-start mb-4">
-                        <i class="fa-solid fa-magnifying-glass text-5xl text-black mb-4"></i>
-                        <h3 class="text-[1.6rem] font-dmsans font-medium mb-2">Open Positions</h3>
-                        <p class="text-gray-600 text-[1.3rem] font-inter">Explore our current job openings and find your
+                        <i class="fa-solid fa-magnifying-glass text-5xl text-black mb-2 sm:mb-4"></i>
+                        <h3 class="text-[1.6rem] font-dmsans font-medium mb-0 sm:mb-2">Open Positions</h3>
+                        <p class="text-gray-600 text-[18px] sm:text-[1.3rem] font-inter">Explore our current job openings and find your
                             perfect fit.</p>
                     </div>
                 </div>
@@ -274,73 +285,78 @@
         </section>
 
         <!-- Contact Us -->
-        <section class="px-5 sm:px-16 py-8 items-center">
+        <section id="cta" class="p-8 sm:px-16 py-8 items-center">
             <div>
-                <h1 class="sm:text-[3.5rem] text-[40px] font-medium font-dmsans">Contact Us</h1>
-                <p class="sm:text-[20px] font-inter mt-1">We're here to answer your questions and provide assistance
+                <h1 class="sm:text-[3.5rem] pt-4 text-[40px] font-medium font-dmsans">Contact Us</h1>
+                <p class="sm:text-[20px] text-[18px] font-inter mt-1">We're here to answer your questions and provide assistance
                     with your PPE needs.</p>
             </div>
 
             <div class="mt-4">
-                <div class="flex items-center gap-6">
-                    <div class="shape">
+                <div class="flex flex-col gap-6">
+                    <!-- <div class="contact-head">
+                        <div>
+                            <h3> <i class="fa-solid fa-phone"></i>
+                                Phone</h3>
+                            <p>Call our dedicated customer support line: <b>+91 22 43337200 (10AM-6PM IST)</b></p>
+                        </div>
+                    </div> -->
+
+                    <div class="contact-head">
                         <div class="icons">
                             <i class="fa-solid fa-phone"></i>
                         </div>
-                    </div>
-                    <div class="contact-head">
-                        <h3>Phone</h3>
-                        <p>Call our dedicated customer support line: <b>+91 22 43337200 (10AM-6PM IST)</b></p>
-                    </div>
-                </div>
-
-                <div class="flex items-center gap-6">
-                    <div class="shape">
-                        <div class="icons">
-                            <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>Call our dedicated customer support line: <b>+91 22 43337200 (10AM-6PM IST)</b></p>
                         </div>
                     </div>
-                    <div class="contact-head">
-                        <h3>Email</h3>
-                        <a href="mailto:mail@tozaisafety.com">
-                            <p>Reach out to our team at:
-                                <b>mail@tozaisafety.com</b>
-                            </p>
-                        </a>
-                    </div>
-                </div>
 
-                <div class="flex items-center gap-6">
-                    <div class="shape">
+                    <div class="contact-head">
+                        <div class="icons">
+                            <a href="mailto:mail@tozaisafety.com">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:mail@tozaisafety.com">
+                                <p>Reach out to our team at:
+                                    <b>mail@tozaisafety.com</b>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-head">
                         <div class="icons">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
+                        <div>
+                            <h3>Address</h3>
+                            <p>Visit our office: <b>144A, Mittal Tower, Nariman
+                                    Point, Mumbai 400021 </b></p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="contact-head">
-                        <h3>Address</h3>
-                        <p>Visit our office: <b>144A, Mittal Tower, Nariman
-                                Point, Mumbai 400021 </b></p>
-                        </a>
-                    </div>
-                </div>
 
-                <div class="flex items-center gap-6">
-                    <div class="shape">
+                    <div class="contact-head">
                         <div class="icons">
                             <a href="https://www.linkedin.com/company/tozai-safety-private-limited/" target="_blank">
                                 <i class="fa-brands fa-linkedin text-[2rem] text-blue-700"></i>
                             </a>
                         </div>
-                    </div>
-                    <div class="contact-head">
-                        <h3>
-                            <a href="https://www.linkedin.com/company/tozai-safety-private-limited/" target="_blank"> LinkedIn </a></h3>
-                    </div>
 
+                        <div>
+                            <h3>
+                                <a href="https://www.linkedin.com/company/tozai-safety-private-limited/"
+                                    target="_blank"> LinkedIn </a>
+                            </h3>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <!-- <div class="sm:text-[25px] font-dmsans font-medium">
+                <!-- <div class="sm:text-[25px] font-dmsans font-medium">
                 <h3>LinkedIn <a href="#" class="text-[20px] font-inter font-normal">
                         <i class="fa-brands fa-linkedin text-[2rem] text-blue-700"></i></h3>
             </div> -->
