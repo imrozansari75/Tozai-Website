@@ -21,7 +21,7 @@ html {
 }
 
 .contact-head p {
-@apply text-[18px] sm:text-[20px] font-inter font-normal;
+@apply text-[16px] sm:text-[20px] font-inter font-normal;
 }
 
 body {
