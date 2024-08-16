@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="output.css">
+    <title>Tozai Website - About us</title>
+</head>
+
+<body>
+
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="./index.html" class="nav__logo">
+                    <img class="w-[8rem] sm:w-[9rem]" src="./assets/img/Tozai Safety.jpg" alt="Tozai Safety Logo">
+                </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-fill nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="./index.html" class="nav__link">Home</a></li>
+
+                    <li><a href="#aboutUs" class="nav__link">About us</a></li>
+
+                    <!-- <li class="dropdown__item">
+                        <a href="#container">
+                            <div class="nav__link">
+                                Products
+                            </div>
+                        </a>
+                    </li> -->
+
+                    <li class="dropdown__item">
+                        <a href="#careers">
+                            <div class="nav__link">
+                                Careers
+                            </div>
+                        </a>
+                    </li>
+
+                    <li><a href="#cta" class="nav__link">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Page -->
+        <section id="hero-section" class="hero_section flex flex-col sm:flex-row justify-between items-center">
+
+            <div class="w-full sm:w-[68vw] mb-8 md:mb-0 px-4 md:px-20">
+                <h1 class="text-[30px] sm:text-[45px] font-medium font-dmsans mb-4 leading-snug text-[#161613]">
+                    About Tozai Safety</h1>
+                <p class="sm:text-[22px] text-[#161613] font-inter">
+                    Established in 1994 and headquartered in Mumbai, Maharashtra, Tozai Safety Private Limited has grown
+                    into a global leader in personal protective equipment (PPE) and safety solutions. With over 30 years
+                    of industry expertise, we are a trusted OEM partner to many renowned names worldwide, delivering
+                    superior hand safety products that cater to diverse industrial needs.
+                </p>
+            </div>
+
+            <div class="hero__img w-[100vw] sm:w-[32vw]">
+                <img src="https://i.pinimg.com/564x/fa/82/ea/fa82ea06a3384c0df5a006108edd1c08.jpg"
+                    class="sm:h-[calc(100vh-5rem)] w-[100vw] sm:p-0 p-2 object-cover object-right sm:w-[60vw]"
+                    alt="Worker with PPE">
+            </div>
+        </section>
+
+        <!-- Our Mission Page -->
+        <section id="aboutUs" class="flex flex-col md:flex-row items-center">
+            <div class="sm:pt-14">
+                <img src="./assets/img/about-img.png" alt="Worker with PPE"
+                    class="sm:h-[93vh] w-[100vw] sm:p-0 p-2 object-fill sm:w-[45vw]">
+            </div>
+            <div class="md:w-2/3 mb-8 md:mb-0 p-8 md:p-16">
+                <div class="mb-2">
+                    <h1 class="text-5xl font-medium font-dmsans mb-4">Our Mission</h1>
+                    <p class="text-[20px] font-inter">Tozai Safety is dedicated to protect lives by providing top-tier
+                        PPE products that meet and exceed international safety standards. We are committed to being a
+                        reliable partner in safety, ensuring our customers can perform their best while staying
+                        protected.</p>
+                </div>
+
+                <div class="mt-4">
+                    <h1 class="text-5xl font-medium font-dmsans mb-4">Why choose Tozai Safety?</h1>
+                    <p class="text-[20px] font-inter">As a trusted OEM partner with over 30 years of expertise, we
+                        deliver superior hand safety products that exceed international standards. Our unwavering
+                        commitment to safety, quality, and customer satisfaction makes us the premier choice for your
+                        PPE needs.</p>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 mt-6 justify-between">
+                    <div class="bg-[#EDEBE3] p-4">
+                        <h3 class="text-[1.6rem] font-semibold font-dmsans">Safety First</h3>
+                        <p class="text-[20px] font-inter">We prioritize the well-being of workers and aim to provide
+                            products that safeguard their hands from hazards and injuries.</p>
+                    </div>
+                    <div class="bg-[#EDEBE3] p-4">
+                        <h3 class="text-[1.6rem] font-semibold font-dmsans">Quality Assurance</h3>
+                        <p class="text-[20px] font-inter">We employ rigorous quality control measures to ensure that our
+                            gloves meet the highest industry standards for durability, comfort, and performance.</p>
+                    </div>
+                </div>
+                <div class="bg-[#EDEBE3] p-4 mt-4">
+                    <h3 class="text-[1.6rem] font-semibold font-dmsans">Customer Satisfaction</h3>
+                    <p class="text-[20px] font-inter">We strive to exceed our customer expectations by providing timely
+                        delivery, personalized support, and responsive communication.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Team Page -->
+
+
+        <!-- Manufacturing Page -->
+
+
+        <!-- Corporate Culture Section -->
+        <section id="careers" class="sm:pt-20 p-8 sm:px-16 items-center">
+            <h1 class="text-[2.5rem] sm:text-[3.5rem] font-medium font-dmsans mb-0 pt-4">Corporate Culture</h1>
+            <p class="mb-8 text-[18px] text-gray-700 sm:text-[21px] font-inter">At Tozai Safety, we believe in fostering
+                a culture of collaboration, innovation, and respect. We are committed to creating a positive and
+                supportive work environment where everyone feels valued and empowered to contribute their best.</p>
+
+            <div class="flex flex-col md:flex-row md:flex-wrap justify-between space-y-6 md:space-y-0">
+
+                <div class="w-full md:w-1/3 p-4 text-left">
+                    <div class="flex flex-col items-start mb-4">
+                        <h3 class="mb-0 text-[1.6rem] font-dmsans font-medium">Collaboration</h3>
+                        <p class="text-gray-600 text-[18px] sm:text-[1.3rem] font-inter">We encourage teamwork and open communication across all levels of the organization.</p>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/3 p-4 text-left">
+                    <div class="flex flex-col items-start mb-4">
+                        <h3 class="text-[1.6rem] font-dmsans font-medium mb-0">Innovation</h3>
+                        <p class="text-gray-600 text-[18px] sm:text-[1.3rem] font-inter">We embrace new ideas and technologies to develop innovative safety solutions.</p>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/3 p-4 text-left">
+                    <div class="flex flex-col items-start mb-4">
+                        <h3 class="text-[1.6rem] font-dmsans font-medium mb-0">Respect</h3>
+                        <p class="text-gray-600 text-[18px] sm:text-[1.3rem] font-inter">We value diversity and treat each other with respect, regardless of background or beliefs.</p>
+                    </div>
+                </div>
+
+            </div>            
+        </section>
+
+        <!-- Global Reach -->
+
+
+        <!-- Quality Assuarance -->
+        <section id="careers" class="sm:pt-20 p-8 sm:px-16 items-center">
+            <h1 class="text-[2.5rem] sm:text-[3.5rem] font-medium font-dmsans mb-0 pt-4">Quality Assurance</h1>
+            <p class="mb-8 text-[18px] text-gray-700 sm:text-[21px] font-inter">Tozai Safety places a high priority on quality assurance. We implement comprehensive testing procedures to ensure that our gloves meet the highest standards for performance, durability, and safety.</p>
+            <div class="flex flex-wrap justify-between space-y-6 md:space-y-0">
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-left">
+                    <div class="flex flex-col items-start mb-4">
+                        <i class="fa-solid fa-chart-line text-5xl text-black mb-2 sm:mb-4"></i>
+                        <h3 class="mb-0 sm:mb-2 text-[1.6rem] font-dmsans font-medium">Material Testing</h3>
+                        <p class="text-gray-600 text-[18px] sm:text-[1.3rem] font-inter">We conduct rigorous tests on all raw materials to ensure they meet our specifications.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-left">
+                    <div class="flex flex-col items-start mb-4">
+                        <i class="fa-solid fa-people-group text-5xl text-black mb-2 sm:mb-4"></i>
+                        <h3 class="text-[1.6rem] font-dmsans font-medium mb-0 sm:mb-2">Performance Testing</h3>
+                        <p class="text-gray-600 text-[18px] sm:text-[1.3rem] font-inter">We subject our gloves to a variety of performance tests to evaluate their strength, dexterity, and resistance to hazards.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-left">
+                    <div class="flex flex-col items-start mb-4">
+                        <i class="fa-solid fa-magnifying-glass text-5xl text-black mb-2 sm:mb-4"></i>
+                        <h3 class="text-[1.6rem] font-dmsans font-medium mb-0 sm:mb-2">Inspection and Certification</h3>
+                        <p class="text-gray-600 text-[18px] sm:text-[1.3rem] font-inter">Our gloves undergo thorough inspection and are certified by our stringent quality control experts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us -->
+        <section id="cta" class="p-8 sm:px-16 items-center">
+            <div>
+                <h1 class="sm:text-[3.5rem] pt-4 text-[40px] font-medium font-dmsans">Contact Us</h1>
+                <p class="sm:text-[20px] text-[18px] font-inter mt-1">We're here to answer your questions and provide
+                    assistance
+                    with your PPE needs.</p>
+            </div>
+
+            <div class="mt-4">
+                <div class="flex flex-col gap-6">
+
+                    <div class="contact-head">
+                        <div class="icons">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>Call our dedicated customer support line: <b>+91 22 43337200 (10AM-6PM IST)</b></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-head">
+                        <div class="icons">
+                            <a href="mailto:mail@tozaisafety.com">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:mail@tozaisafety.com">
+                                <p>Reach out to our team at:
+                                    <b>mail@tozaisafety.com</b>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-head">
+                        <div class="icons">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h3>Address</h3>
+                            <p>Visit our office: <b>144A, Mittal Tower, Nariman
+                                    Point, Mumbai 400021 </b></p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-head">
+                        <div class="icons">
+                            <a href="https://www.linkedin.com/company/tozai-safety-private-limited/" target="_blank">
+                                <i class="fa-brands fa-linkedin text-[2rem] text-blue-700"></i>
+                            </a>
+                        </div>
+
+                        <div>
+                            <h3>
+                                <a href="https://www.linkedin.com/company/tozai-safety-private-limited/"
+                                    target="_blank"> LinkedIn </a>
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- <div class="sm:text-[25px] font-dmsans font-medium">
+                <h3>LinkedIn <a href="#" class="text-[20px] font-inter font-normal">
+                        <i class="fa-brands fa-linkedin text-[2rem] text-blue-700"></i></h3>
+            </div> -->
+
+        </section>
+
+        <section class="pt-20"></section>
+
+    </main>
+
+    <!-- Script Js -->
+    <script src="script.js"></script>
+</body>
+
+</html>

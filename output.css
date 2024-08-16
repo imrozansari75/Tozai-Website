@@ -630,10 +630,6 @@ video {
   width: 100vw;
 }
 
-.w-\[68vw\]{
-  width: 68vw;
-}
-
 .w-\[85vw\]{
   width: 85vw;
 }
@@ -735,9 +731,9 @@ video {
   padding-right: 1.5rem;
 }
 
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pt-16{
@@ -970,7 +966,7 @@ a {
 /*=============== REUSABLE CSS CLASSES ===============*/
 
 .container {
-  max-width: 90%;
+  max-width: 91%;
   margin-inline: auto;
 }
 
@@ -1388,16 +1384,8 @@ a {
     width: 45vw;
   }
 
-  .sm\:w-\[60vw\]{
-    width: 60vw;
-  }
-
   .sm\:w-\[9rem\]{
     width: 9rem;
-  }
-
-  .sm\:w-\[68vw\]{
-    width: 68vw;
   }
 
   .sm\:flex-row{
@@ -1413,9 +1401,9 @@ a {
     padding-right: 4rem;
   }
 
-  .sm\:px-20{
-    padding-left: 5rem;
-    padding-right: 5rem;
+  .sm\:px-\[4rem\]{
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .sm\:pt-14{
@@ -1493,11 +1481,6 @@ a {
 
   .md\:p-16{
     padding: 4rem;
-  }
-
-  .md\:px-20{
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
 }
 

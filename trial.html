@@ -4,139 +4,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gloves Slider</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        #container {
-            width: 80%;
-            overflow: hidden;
-            position: relative;
-        }
-
-        #slider-container {
-            display: flex;
-            align-items: center;
-        }
-
-        #slider {
-            display: flex;
-            width: 100%;
-            transition: transform 0.4s ease-in-out;
-        }
-
-        .slide {
-            min-width: 100%;
-            box-sizing: border-box;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: #fff;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .slide img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .slide p {
-            margin-top: 10px;
-            font-size: 16px;
-            color: #333;
-        }
-
-        .btn {
-            cursor: pointer;
-            width: 30px;
-            height: 30px;
-            background-color: #333;
-            color: #fff;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 20px;
-            margin: 0 10px;
-        }
-    </style>
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="output.css">
+    <title>Tozai Website</title>
 </head>
 
 <body>
-    <div id="container">
-        <div id="slider-container">
-            <span onclick="slideLeft()" class="btn">&#9664;</span>
-            <div id="slider">
-                <div class="slide">
-                    <div>
-                        <img src="./assets/img/img1.jpeg" alt="Gloves Image 1">
+
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="./index.html" class="nav__logo">
+                    <img class="w-[8rem] sm:w-[9rem]" src="./assets/img/Tozai Safety.jpg" alt="Tozai Safety Logo">
+                </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-fill nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="./index.html" class="nav__link">Home</a></li>
+
+                    <li><a href="#aboutUs" class="nav__link">About us</a></li>
+
+                    <!-- <li class="dropdown__item">
+                        <a href="#container">
+                            <div class="nav__link">
+                                Products
+                            </div>
+                        </a>
+                    </li> -->
+
+                    <li class="dropdown__item">
+                        <a href="#careers">
+                            <div class="nav__link">
+                                Careers
+                            </div>
+                        </a>
+                    </li>
+
+                    <li><a href="#cta" class="nav__link">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="px-8 sm:px-16">
+        <!-- Home Page -->
+        <section id="hero-section" class="w-full hero_section flex flex-col sm:flex-row justify-between items-center">
+
+            <div class="w-full sm:w-[70vw] mb-8 md:mb-0 px-4 md:px-20">
+                <h1 class="text-[30px] sm:text-[45px] font-medium font-dmsans mb-4 leading-snug text-[#161613]">
+                    Tozai Safety: Your
+                    safety solutions partner</h1>
+                <p class="sm:text-[22px] text-[#161613] font-inter">
+                    Welcome to Tozai Safety! We are a leading Indian manufacturer with over 30 years in the personal
+                    protective equipment (PPE) space and we’re renowned for our specialization in hand safety products.
+                    Our commitment to quality ensures that each product is meticulously designed to provide optimal
+                    protection while delivering exceptional comfort. We prioritize the safety of our customers without
+                    sacrificing usability or ease of wear. <br> <br>
+                    At Tozai Safety, we understand that effective protection is crucial in today’s demanding work
+                    environments. Our comprehensive range of safety solutions is crafted to meet the highest global
+                    safety standards, ensuring that workers can perform their tasks with confidence and ease. We are a
+                    trusted OEM partner for many international brands.
+                </p>
+            </div>
+
+            <div class="hero__img">
+                <img src="https://i.pinimg.com/564x/fa/82/ea/fa82ea06a3384c0df5a006108edd1c08.jpg"
+                    class="sm:h-[calc(100vh-5rem)] sm:p-0 p-2 object-cover object-right" alt="Worker with PPE">
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="aboutUs" class="sm:py-2 flex gap-4 flex-col md:flex-row items-center">
+            <div>
+                <img src="./assets/img/about-img.png" alt="Worker with PPE"
+                    class="sm:h-[93vh] w-[90vw] sm:p-0 p-2 object-fill sm:w-[45vw]">
+            </div>
+
+            <div class="md:w-2/3 mb-8 md:mb-0">
+                <h1 class="text-5xl font-medium font-dmsans mb-4">About Us</h1>
+                <p class="text-[20px] font-inter">Tozai Safety has been a leader in PPE manufacturing for decades,
+                    driven by a
+                    commitment to quality, innovation, and worker safety.</p>
+                <div class="flex flex-col sm:flex-row gap-4 mt-6 justify-between">
+                    <div class="bg-[#EDEBE3] p-4">
+                        <h3 class="text-[1.6rem] font-semibold font-dmsans">Our Mission</h3>
+                        <p class="text-[20px] font-inter">To provide high-quality, reliable PPE that protects your work
+                            force and enhances user safety
+                            for all industrial applications.</p>
                     </div>
-                    <div>
-                        <p>High-quality gloves designed for optimal comfort and protection. Perfect for industrial use.</p>
+                    <div class="bg-[#EDEBE3] p-4">
+                        <h3 class="text-[1.6rem] font-semibold font-dmsans">Our Values</h3>
+                        <p class="text-[20px] font-inter">We prioritize comfort without compromising protection. We
+                            adhere to strict quality control
+                            measures to ensure customer satisfaction.</p>
                     </div>
                 </div>
-                <div class="slide">
-                    <div>
-                        <img src="./assets/img/img1.jpeg" alt="Gloves Image 2">
-                    </div>
-                    <div>
-                        <p>Durable and reliable gloves that offer excellent grip and dexterity.</p>
+                <div class="bg-[#EDEBE3] p-4 mt-4">
+                    <h3 class="text-[1.6rem] font-semibold font-dmsans">Our Team</h3>
+                    <p class="text-[20px] font-inter">With over 30 years of industry expertise, we are a trusted OEM
+                        partner to many renowned names
+                        worldwide, delivering superior hand safety products that cater to diverse industrial needs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Section -->
+        <section id="careers" class="sm:pt-20 items-center">
+            <h1 class="text-[2.5rem] sm:text-[3.5rem] font-medium font-dmsans mb-0 pt-4">Careers</h1>
+            <p class="mb-8 text-[18px] text-gray-700 sm:text-[21px] font-inter">Join our team of passionate
+                professionals dedicated to
+                ensuring safety in the workplace. Contact us at<br><b class="text-red-500"> <a
+                        href="mailto:talent@texbrex.com">talent@texbrex.com</a></b> to know about opportunities
+                at Tozai Safety.</p>
+            <div class="flex flex-wrap justify-between space-y-6 md:space-y-0">
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-left">
+                    <div class="flex flex-col items-start mb-4">
+                        <i class="fa-solid fa-chart-line text-5xl text-black mb-2 sm:mb-4"></i>
+                        <h3 class="mb-0 sm:mb-2 text-[1.6rem] font-dmsans font-medium">Career Growth</h3>
+                        <p class="text-gray-600 text-[18px] sm:text-[1.3rem] font-inter">We provide opportunities for
+                            professional
+                            development and advancement.</p>
                     </div>
                 </div>
-                <div class="slide">
-                    <div>
-                        <img src="./assets/img/img1.jpeg" alt="Gloves Image 3">
-                    </div>
-                    <div>
-                        <p>Ergonomically designed gloves to reduce hand fatigue during prolonged use.</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div>
-                        <img src="./assets/img/img1.jpeg" alt="Gloves Image 4">
-                    </div>
-                    <div>
-                        <p>Weather-resistant gloves suitable for various outdoor activities.</p>
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-left">
+                    <div class="flex flex-col items-start mb-4">
+                        <i class="fa-solid fa-people-group text-5xl text-black mb-2 sm:mb-4"></i>
+                        <h3 class="text-[1.6rem] font-dmsans font-medium mb-0 sm:mb-2">Teamwork</h3>
+                        <p class="text-gray-600 text-[18px] sm:text-[1.3rem] font-inter">We foster a collaborative and
+                            supportive work
+                            environment.</p>
                     </div>
                 </div>
-                <div class="slide">
-                    <div>
-                        <img src="./assets/img/img1.jpeg" alt="Gloves Image 5">
-                    </div>
-                    <div>
-                        <p>Lightweight gloves providing maximum flexibility and comfort.</p>
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-left">
+                    <div class="flex flex-col items-start mb-4">
+                        <i class="fa-regular fa-lightbulb text-5xl text-black mb-2 sm:mb-4"></i>
+                        <h3 class="text-[1.6rem] font-dmsans font-medium mb-0 sm:mb-2">Innovation</h3>
+                        <p class="text-gray-600 text-[18px] sm:text-[1.3rem] font-inter">We encourage creativity and
+                            innovation to
+                            enhance safety solutions.</p>
                     </div>
                 </div>
-                <div class="slide">
-                    <div>
-                        <img src="./assets/img/img1.jpeg" alt="Gloves Image 6">
-                    </div>
-                    <div>
-                        <p>High-performance gloves ideal for demanding tasks.</p>
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4 text-left">
+                    <div class="flex flex-col items-start mb-4">
+                        <i class="fa-solid fa-magnifying-glass text-5xl text-black mb-2 sm:mb-4"></i>
+                        <h3 class="text-[1.6rem] font-dmsans font-medium mb-0 sm:mb-2">Open Positions</h3>
+                        <p class="text-gray-600 text-[18px] sm:text-[1.3rem] font-inter">Explore our current job
+                            openings and find your
+                            perfect fit.</p>
                     </div>
                 </div>
             </div>
-            <span onclick="slideRight()" class="btn">&#9654;</span>
-        </div>
-    </div>
+        </section>
 
-    <script src="script.js">
-    </script>
+        <!-- Contact Us -->
+        <section id="cta" class="items-center">
+            <div>
+                <h1 class="sm:text-[3.5rem] pt-4 text-[40px] font-medium font-dmsans">Contact Us</h1>
+                <p class="sm:text-[20px] text-[18px] font-inter mt-1">We're here to answer your questions and provide
+                    assistance
+                    with your PPE needs.</p>
+            </div>
+
+            <div class="mt-4">
+                <div class="flex flex-col gap-6">
+                    <!-- <div class="contact-head">
+                        <div>
+                            <h3> <i class="fa-solid fa-phone"></i>
+                                Phone</h3>
+                            <p>Call our dedicated customer support line: <b>+91 22 43337200 (10AM-6PM IST)</b></p>
+                        </div>
+                    </div> -->
+
+                    <div class="contact-head">
+                        <div class="icons">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>Call our dedicated customer support line: <b>+91 22 43337200 (10AM-6PM IST)</b></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-head">
+                        <div class="icons">
+                            <a href="mailto:mail@tozaisafety.com">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:mail@tozaisafety.com">
+                                <p>Reach out to our team at:
+                                    <b>mail@tozaisafety.com</b>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-head">
+                        <div class="icons">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h3>Address</h3>
+                            <p>Visit our office: <b>144A, Mittal Tower, Nariman
+                                    Point, Mumbai 400021 </b></p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-head">
+                        <div class="icons">
+                            <a href="https://www.linkedin.com/company/tozai-safety-private-limited/" target="_blank">
+                                <i class="fa-brands fa-linkedin text-[2rem] text-blue-700"></i>
+                            </a>
+                        </div>
+
+                        <div>
+                            <h3>
+                                <a href="https://www.linkedin.com/company/tozai-safety-private-limited/"
+                                    target="_blank"> LinkedIn </a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="sm:text-[25px] font-dmsans font-medium">
+                <h3>LinkedIn <a href="#" class="text-[20px] font-inter font-normal">
+                        <i class="fa-brands fa-linkedin text-[2rem] text-blue-700"></i></h3>
+            </div> -->
+
+        </section>
+
+        <section class="pt-20"></section>
+
+    </main>
+
+    <!-- Script Js -->
+    <script src="script.js"></script>
 </body>
 
 </html>
