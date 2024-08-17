@@ -635,20 +635,12 @@ video {
   width: 90vw;
 }
 
-.w-full{
-  width: 100%;
-}
-
-.w-\[\]{
-  width: ;
-}
-
 .w-\[91\%\]{
   width: 91%;
 }
 
-.w-\[67vw\]{
-  width: 67vw;
+.w-full{
+  width: 100%;
 }
 
 .flex-col{
@@ -1313,20 +1305,8 @@ a {
     margin-bottom: 1rem;
   }
 
-  .sm\:h-\[93vh\]{
-    height: 93vh;
-  }
-
-  .sm\:h-\[calc\(100vh-5rem\)\]{
-    height: calc(100vh - 5rem);
-  }
-
   .sm\:w-\[45vw\]{
     width: 45vw;
-  }
-
-  .sm\:w-\[67vw\]{
-    width: 67vw;
   }
 
   .sm\:w-\[9rem\]{
@@ -1339,6 +1319,36 @@ a {
 
   .sm\:p-0{
     padding: 0px;
+  }
+
+  .sm\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .sm\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .sm\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .sm\:py-\[\]{
+    padding-top: ;
+    padding-bottom: ;
+  }
+
+  .sm\:py-\[7rem\]{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .sm\:py-\[8rem\]{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .sm\:pt-20{
@@ -1379,16 +1389,12 @@ a {
     margin-bottom: 0px;
   }
 
-  .md\:h-\[93vh\]{
-    height: 93vh;
+  .md\:h-\[92vh\]{
+    height: 92vh;
   }
 
   .md\:h-\[calc\(100vh-5rem\)\]{
     height: calc(100vh - 5rem);
-  }
-
-  .md\:h-\[92vh\]{
-    height: 92vh;
   }
 
   .md\:w-1\/2{
