@@ -1296,7 +1296,18 @@ a {
   }
 }
 
+/* About Us */
+
+.h1{
+  font-size: 30px;
+}
+
 @media (min-width: 640px){
+  .h1{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .sm\:mb-2{
     margin-bottom: 0.5rem;
   }
@@ -1321,34 +1332,13 @@ a {
     padding: 0px;
   }
 
-  .sm\:py-20{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
-  .sm\:py-3{
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
-  .sm\:py-32{
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-
-  .sm\:py-\[\]{
-    padding-top: ;
-    padding-bottom: ;
-  }
-
-  .sm\:py-\[7rem\]{
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-  }
-
   .sm\:py-\[8rem\]{
     padding-top: 8rem;
     padding-bottom: 8rem;
+  }
+
+  .sm\:pr-9{
+    padding-right: 2.25rem;
   }
 
   .sm\:pt-20{
