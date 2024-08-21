@@ -742,24 +742,12 @@ video {
   font-size: 18px;
 }
 
-.text-\[2\.5rem\]{
-  font-size: 2.5rem;
-}
-
 .text-\[20px\]{
   font-size: 20px;
 }
 
 .text-\[2rem\]{
   font-size: 2rem;
-}
-
-.text-\[30px\]{
-  font-size: 30px;
-}
-
-.text-\[40px\]{
-  font-size: 40px;
 }
 
 .font-medium{
@@ -894,7 +882,7 @@ p {
 
 @media (min-width: 1024px) {
   h1 {
-    font-size: 40px;
+    font-size: 48px;
     /* Desktop size */
   }
 
@@ -1363,18 +1351,7 @@ a {
   }
 }
 
-/* About Us */
-
-.h1{
-  font-size: 30px;
-}
-
 @media (min-width: 640px){
-  .h1{
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   .sm\:mb-2{
     margin-bottom: 0.5rem;
   }
@@ -1416,28 +1393,8 @@ a {
     font-size: 1.3rem;
   }
 
-  .sm\:text-\[20px\]{
-    font-size: 20px;
-  }
-
-  .sm\:text-\[21px\]{
-    font-size: 21px;
-  }
-
-  .sm\:text-\[22px\]{
-    font-size: 22px;
-  }
-
   .sm\:text-\[25px\]{
     font-size: 25px;
-  }
-
-  .sm\:text-\[3\.5rem\]{
-    font-size: 3.5rem;
-  }
-
-  .sm\:text-\[45px\]{
-    font-size: 45px;
   }
 }
 
@@ -1486,3 +1443,4 @@ a {
     width: 25%;
   }
 }
+
