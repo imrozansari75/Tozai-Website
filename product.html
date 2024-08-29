@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Include jQuery from a CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="output.css">
+    <title>Tozai Website</title>
+</head>
+
+<body>
+
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="./index.html" class="nav__logo">
+                    <img class="w-[8rem] sm:w-[9rem]" src="./assets/img/Tozai Safety.jpg" alt="Tozai Safety Logo">
+                </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-fill nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="./index.html" class="nav__link">Home</a></li>
+
+                    <li><a href="./about-us.html" class="nav__link">About us</a></li>
+
+                    <li class="dropdown__item">
+                        <a href="./product.html">
+                            <div class="nav__link">
+                                Products
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="dropdown__item">
+                        <a href="#careers">
+                            <div class="nav__link">
+                                Careers
+                            </div>
+                        </a>
+                    </li>
+
+                    <li><a href="#cta" class="nav__link">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="w-[91%] mx-auto">
+
+        <div class="gallery">
+            <figure>
+                <img src="https://images.unsplash.com/photo-1448814100339-234df1d4005d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                    alt="" />
+                <figcaption>Daytona Beach <small>United States</small></figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1443890923422-7819ed4101c0?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                    alt="" />
+                <figcaption>Териберка, gorod Severomorsk <small>Russia</small></figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1445964047600-cdbdb873673d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                    alt="" />
+                <figcaption>
+                    Bad Pyrmont <small>Deutschland</small>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1439798060585-62ab242d7724?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                    alt="" />
+                <figcaption>Yellowstone National Park <small>United States</small></figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1440339738560-7ea831bf5244?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                    alt="" />
+                <figcaption>Quiraing, Portree <small>United Kingdom</small></figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1441906363162-903afd0d3d52?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                    alt="" />
+                <figcaption>Highlands <small>United States</small></figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1448814100339-234df1d4005d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                    alt="" />
+                <figcaption>Daytona Beach <small>United States</small></figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1443890923422-7819ed4101c0?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                    alt="" />
+                <figcaption>Териберка, gorod Severomorsk <small>Russia</small></figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1445964047600-cdbdb873673d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                    alt="" />
+                <figcaption>
+                    Bad Pyrmont <small>Deutschland</small>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1439798060585-62ab242d7724?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                    alt="" />
+                <figcaption>Yellowstone National Park <small>United States</small></figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1440339738560-7ea831bf5244?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                    alt="" />
+                <figcaption>Quiraing, Portree <small>United Kingdom</small></figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1441906363162-903afd0d3d52?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                    alt="" />
+                <figcaption>Highlands <small>United States</small></figcaption>
+            </figure>
+        </div>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
+            <symbol id="close" viewBox="0 0 18 18">
+                <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M9,0.493C4.302,0.493,0.493,4.302,0.493,9S4.302,17.507,9,17.507
+              S17.507,13.698,17.507,9S13.698,0.493,9,0.493z M12.491,11.491c0.292,0.296,0.292,0.773,0,1.068c-0.293,0.295-0.767,0.295-1.059,0
+              l-2.435-2.457L6.564,12.56c-0.292,0.295-0.766,0.295-1.058,0c-0.292-0.295-0.292-0.772,0-1.068L7.94,9.035L5.435,6.507
+              c-0.292-0.295-0.292-0.773,0-1.068c0.293-0.295,0.766-0.295,1.059,0l2.504,2.528l2.505-2.528c0.292-0.295,0.767-0.295,1.059,0
+              s0.292,0.773,0,1.068l-2.505,2.528L12.491,11.491z" />
+            </symbol>
+        </svg>
+
+    </main>
+
+    <!-- Script Js -->
+    <script src="script.js"></script>
+    <script>
+        popup = {
+            init: function () {
+                $('figure').click(function () {
+                    popup.open($(this));
+                });
+
+                $(document).on('click', '.popup img', function () {
+                    return false;
+                }).on('click', '.popup', function () {
+                    popup.close();
+                })
+            },
+            open: function ($figure) {
+                $('.gallery').addClass('pop');
+                $popup = $('<div class="popup" />').appendTo($('body'));
+                $fig = $figure.clone().appendTo($('.popup'));
+                $bg = $('<div class="bg" />').appendTo($('.popup'));
+                $close = $('<div class="close"><svg><use xlink:href="#close"></use></svg></div>').appendTo($fig);
+                $shadow = $('<div class="shadow" />').appendTo($fig);
+                src = $('img', $fig).attr('src');
+                $shadow.css({ backgroundImage: 'url(' + src + ')' });
+                $bg.css({ backgroundImage: 'url(' + src + ')' });
+                setTimeout(function () {
+                    $('.popup').addClass('pop');
+                }, 10);
+            },
+            close: function () {
+                $('.gallery, .popup').removeClass('pop');
+                setTimeout(function () {
+                    $('.popup').remove()
+                }, 100);
+            }
+        }
+
+        popup.init()
+
+    </script>
+</body>
+
+</html>
