@@ -1,28 +1,18 @@
-// Header JS
-const showMenu = (toggleId, navId) => {
+/*=============== SHOW MENU ===============*/
+const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
-        nav = document.getElementById(navId),
-        burgerIcon = toggle.querySelector('.ri-menu-fill'),
-        closeIcon = toggle.querySelector('.ri-close-line');
-
-    toggle.addEventListener('click', () => {
-        nav.classList.toggle('show-menu');
-
-        burgerIcon.classList.toggle('hidden');
-        closeIcon.classList.toggle('hidden');
-    });
-
-    const navLinks = nav.querySelectorAll('a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            nav.classList.remove('show-menu');
-            burgerIcon.classList.remove('hidden');
-            closeIcon.classList.add('hidden');
-        });
-    });
-};
-
-showMenu('nav-toggle', 'nav-menu');
+          nav = document.getElementById(navId)
+ 
+    toggle.addEventListener('click', () =>{
+        // Add show-menu class to nav menu
+        nav.classList.toggle('show-menu')
+ 
+        // Add show-icon to show and hide the menu icon
+        toggle.classList.toggle('show-icon')
+    })
+ }
+ 
+ showMenu('nav-toggle','nav-menu')
 
 
 // Slider JS

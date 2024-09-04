@@ -458,67 +458,92 @@ a {
 
 /* Product Section */
 
-
-.card-image {
-  width: 100%; /* Full width of the card */
-  aspect-ratio: 1 / 1; /* Set a 1:1 aspect ratio (square) */
-  overflow: hidden; /* Hide overflow for a clean look */
-  display: flex; /* Flexbox for image alignment */
-  align-items: center; /* Center align image */
-  justify-content: center; /* Center align image */
-}
-
-.card-image img {
-  width: 100%; /* Full width within aspect ratio */
-  height: 100%; /* Full height within aspect ratio */
-  object-fit: cover; /* Cover image within the container */
-  display: block; /* Block level for consistent spacing */
-}
-
-.card-list {
-  display: block;
-  /* margin: 1rem auto; */
+.cards-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem auto;
   padding: 0;
-  font-size: 0;
-  text-align: center;
   list-style: none;
+  gap: 1rem; /* Gap between cards */
 }
 
 .card {
-  display: inline-block;
-  width: 100%;
-  max-width: 15.5rem;
-  margin: 1rem;
-  font-size: 1rem;
+  width: 15.5rem; /* Default width for larger screens */
+  margin: 0;
   text-decoration: none;
   overflow: hidden;
-  box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out, box-shadow 0.1s;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+  cursor: pointer;
 }
 
 .card:hover {
   transform: translateY(-0.5rem) scale(1.0125);
-  box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+}
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .card-description {
   display: block;
-  padding: 1em 0em;
+  padding: 1em 0.5em;
   text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  transition: color 0.3s;
 }
 
-.card-description > h5 {
-  font-weight: 400;
+/* Responsive Styles */
+@media (min-width: 1200px) {
+  .cards-items {
+    gap: 1rem; /* Maintain gap between cards for large screens */
+  }
+  .card {
+    width: 15.5rem; /* Fixed width for desktop screens */
+  }
 }
 
-.product-head {
-  padding-top: 3rem;
-  padding-bottom: 1rem;
+@media (max-width: 1199px) {
+  .card {
+    width: 18rem; /* Width for tablets, ensuring 3 cards fit per row */
+  }
 }
 
-.cards-items {
-  display: flex;
-  gap: 6;
-  justify-content: center;
+@media (max-width: 992px) {
+  .card {
+    width: 22rem; /* Width for smaller tablets, ensuring 2 cards fit per row */
+  }
 }
 
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Full width for mobile screens */
+    max-width: 24rem; /* Maximum width for mobile screens to ensure cards are not too large */
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%; /* Full width on very small screens */
+    max-width: 20rem; /* Maximum width for very small screens */
+  }
+}
