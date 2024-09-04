@@ -463,26 +463,27 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   margin: 1rem auto;
-  padding: 0;
+  padding-top: 1rem;
   list-style: none;
   gap: 1rem; /* Gap between cards */
 }
 
 .card {
+  height: 20rem;
   width: 15.5rem; /* Default width for larger screens */
   margin: 0;
   text-decoration: none;
   overflow: hidden;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s;
   cursor: pointer;
 }
 
 .card:hover {
   transform: translateY(-0.5rem) scale(1.0125);
-  box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.2);
 }
 
 .card-image {
@@ -508,8 +509,14 @@ a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  
   text-align: center;
   transition: color 0.3s;
+}
+
+.product-head {
+  text-align: center;
+  padding-top: 1rem;
 }
 
 /* Responsive Styles */

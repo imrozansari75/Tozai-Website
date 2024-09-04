@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Include jQuery from a CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="../output.css">
+    <title>Tozai Website</title>
+</head>
+
+<body>
+
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="./index.html" class="nav__logo">
+                    <img class="w-[8rem] sm:w-[9rem]" src="../assets/img/Tozai Safety.jpg" alt="Tozai Safety Logo">
+                </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-fill nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="../index.html" class="nav__link">Home</a></li>
+
+                    <li><a href="../about-us.html" class="nav__link">About us</a></li>
+
+                    <li class="dropdown__item">
+                        <a href="../product.html">
+                            <div class="nav__link">
+                                Products
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="dropdown__item">
+                        <a href="../index.html#careers">
+                            <div class="nav__link">
+                                Careers
+                            </div>
+                        </a>
+                    </li>
+
+                    <li><a href="../index.html#cta" class="nav__link">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="w-[91%] mx-auto">
+
+        <section>
+            <h1 class="product-head">Leather</h1>
+            <p>Our leather gloves are manufactured from select tanned cowhide and goat leather. Our cut and heat resistance products provide protection for moderate temperatures and cutting risks. These are available in a wide variety of styles to perform the toughest jobs. </p>
+
+        </section>
+
+    </main>
+
+    <!-- Script Js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
