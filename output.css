@@ -1297,14 +1297,13 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   margin: 1rem auto;
-  padding-top: 1rem;
+  padding-block: 1.5rem;
   list-style: none;
   gap: 1rem;
   /* Gap between cards */
 }
 
 .card {
-  height: 20rem;
   width: 15.5rem;
   /* Default width for larger screens */
   margin: 0;

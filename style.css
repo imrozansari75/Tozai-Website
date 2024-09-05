@@ -463,14 +463,15 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   margin: 1rem auto;
-  padding-top: 1rem;
+  padding-block: 1.5rem;
   list-style: none;
-  gap: 1rem; /* Gap between cards */
+  gap: 1rem;
+  /* Gap between cards */
 }
 
 .card {
-  height: 20rem;
-  width: 15.5rem; /* Default width for larger screens */
+  width: 15.5rem;
+  /* Default width for larger screens */
   margin: 0;
   text-decoration: none;
   overflow: hidden;
@@ -509,7 +510,7 @@ a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
-  
+
   text-align: center;
   transition: color 0.3s;
 }
@@ -522,35 +523,44 @@ a {
 /* Responsive Styles */
 @media (min-width: 1200px) {
   .cards-items {
-    gap: 1rem; /* Maintain gap between cards for large screens */
+    gap: 1rem;
+    /* Maintain gap between cards for large screens */
   }
+
   .card {
-    width: 15.5rem; /* Fixed width for desktop screens */
+    width: 15.5rem;
+    /* Fixed width for desktop screens */
   }
 }
 
 @media (max-width: 1199px) {
   .card {
-    width: 18rem; /* Width for tablets, ensuring 3 cards fit per row */
+    width: 18rem;
+    /* Width for tablets, ensuring 3 cards fit per row */
   }
 }
 
 @media (max-width: 992px) {
   .card {
-    width: 22rem; /* Width for smaller tablets, ensuring 2 cards fit per row */
+    width: 22rem;
+    /* Width for smaller tablets, ensuring 2 cards fit per row */
   }
 }
 
 @media (max-width: 768px) {
   .card {
-    width: 100%; /* Full width for mobile screens */
-    max-width: 24rem; /* Maximum width for mobile screens to ensure cards are not too large */
+    width: 100%;
+    /* Full width for mobile screens */
+    max-width: 24rem;
+    /* Maximum width for mobile screens to ensure cards are not too large */
   }
 }
 
 @media (max-width: 576px) {
   .card {
-    width: 100%; /* Full width on very small screens */
-    max-width: 20rem; /* Maximum width for very small screens */
+    width: 100%;
+    /* Full width on very small screens */
+    max-width: 20rem;
+    /* Maximum width for very small screens */
   }
 }
