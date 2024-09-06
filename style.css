@@ -56,6 +56,12 @@ p {
   @apply font-inter;
 }
 
+/* Add styles for the unordered list items */
+li {
+  font-size: 18px;
+  @apply font-inter;
+}
+
 /* Tablet styles (for screens 768px and above) */
 @media (min-width: 768px) {
   h1 {
@@ -79,6 +85,10 @@ p {
   }
 
   p {
+    font-size: 20px;
+  }
+
+  li {
     font-size: 18px;
   }
 }
@@ -87,7 +97,6 @@ p {
 @media (min-width: 1024px) {
   h1 {
     font-size: 48px;
-    /* Desktop size */
   }
 
   h2 {
@@ -108,6 +117,10 @@ p {
 
   p {
     font-size: 20px;
+  }
+
+  li {
+    font-size: 16px;
   }
 }
 
@@ -456,8 +469,80 @@ a {
   }
 }
 
-/* Product Section */
 
+/* Career Cards */
+.career-card-container {
+  position: relative;
+  width: 300px;
+  /* Card width */
+  margin-bottom: 1rem;
+}
+
+.career-card {
+  background: #edebe3;
+  border-radius: 10px;
+  border: 1px solid #d1d1d1;
+  width: 100%;
+  height: 125px;
+  /* Fixed height */
+  padding: 1rem;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.career-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.career-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.career-card__icon {
+  margin-right: 1rem;
+}
+
+.career-card__title {
+  text-align: center;
+}
+
+.career-card__content {
+  max-height: 0;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  /* Full width of the card */
+  background: #ffffff;
+  border-radius: 0 0 20px 20px;
+  /* Rounded corners at the bottom */
+  padding: 0 1rem;
+  /* Same padding as card */
+  box-sizing: border-box;
+  /* Include padding in width */
+  margin-top: 0.5rem;
+  /* Space between card and content */
+}
+
+.career-card__content.show {
+  max-height: 1000px;
+  /* Large enough to fit content */
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+
+/* Product Section */
 .cards-items {
   display: flex;
   flex-wrap: wrap;
