@@ -1417,6 +1417,27 @@ a {
   transform: scaleY(1);
 }
 
+.career_role {
+  display: flex;
+  justify-content: left;
+}
+
+/* Tablet */
+
+@media only screen and (max-width: 1024px) {
+  .career_role {
+    justify-content: left;
+  }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 768px) {
+  .career_role {
+    justify-content: center;
+  }
+}
+
 /* Product Section */
 
 .cards-items {
