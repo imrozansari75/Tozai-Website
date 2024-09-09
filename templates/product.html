@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Include jQuery from a CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="../output.css">
+    <title>Tozai Website</title>
+</head>
+
+<body>
+
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="./index.html" class="nav__logo">
+                    <img class="w-[8rem] sm:w-[9rem]" src="../assets/img/Tozai Safety.jpg" alt="Tozai Safety Logo">
+                </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-fill nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="./index.html" class="nav__link">Home</a></li>
+
+                    <li><a href="./about-us.html" class="nav__link">About us</a></li>
+
+                    <li class="dropdown__item">
+                        <a href="./product.html">
+                            <div class="nav__link">
+                                Products
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="dropdown__item">
+                        <a href="#careers">
+                            <div class="nav__link">
+                                Careers
+                            </div>
+                        </a>
+                    </li>
+
+                    <li><a href="#cta" class="nav__link">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="w-[91%] mx-auto">
+
+        <!-- Gloves and Sleeves -->
+        <secttion class="card-list">
+            <div class="product-head">
+                <h1 class="product-head">Hand Safety Solutions</h1>
+                <p class="text-left">
+                    Our range of hand safety solutions are crafted with the highest quality materials in accordance with international safety standards to provide maximum protection and exceptional comfort. Our products are designed to ensure reliability and safety for its users. We specialize in manufacturing custom-made solutions, which align with your specific safety requirements. We also manufacture a wide range of gloves to cater to diverse needs across different industries, providing you with the perfect fit for any task, a few of which are listed below.
+                </p>
+            </div>
+
+            <ul class="cards-items">
+                <li class="card">
+                    <a class="card-image" href="../gloves/general_purpose.html">
+                        <img src="../assets/img/03112801.jpg" alt="Gloves" />
+                    </a>
+                    <a class="card-description" href="./gloves/general_purpose.html">
+                        <h5>General Purpose</h5>
+                    </a>
+                </li>
+
+                <li class="card">
+                    <a class="card-image" href="../gloves/cut_and_heat.html">
+                        <img src="../assets/img/04132101.jpg" alt="Gloves" />
+                    </a>
+                    <a class="card-description" href="../gloves/cut_and_heat.html">
+                        <h5>Cut and Heat Resistant</h5>
+                    </a>
+                </li>
+
+                <li class="card">
+                    <a class="card-image" href="../gloves/chemical_resistant.html">
+                        <img src="../assets/img/img1.jpeg" alt="Gloves" />
+                    </a>
+                    <a class="card-description" href="../gloves/chemical_resistant.html">
+                        <h5>Chemical Resistant</h5>
+                    </a>
+                </li>
+
+                <li class="card">
+                    <a class="card-image" href="../gloves/leather.html">
+                        <img src="../assets/img/img2.jpeg" alt="Gloves" />
+                    </a>
+                    <a class="card-description" href="../gloves/leather.html">
+                        <h5>Leather</h5>
+                    </a>
+                </li>
+
+                <li class="card">
+                    <a class="card-image" href="../gloves/custom_made.html">
+                        <img src="../assets/img/custom_made.webp" alt="Gloves" />
+                    </a>
+                    <a class="card-description" href="../gloves/custom_made.html">
+                        <h5>Custom Make</h5>
+                    </a>
+                </li>
+            </ul>
+        </secttion>
+
+        <!-- Work Wear -->
+        <!-- <secttion class="card-list">
+            <div class="product-head">
+                <h1 class="product-head">Work Wear</h1>
+                <p class="text-left">
+                    Our Work Wear collection combines durability, safety, and comfort to ensure workers are protected in any environment. From flame-resistant coveralls to high-visibility vests, each piece is designed to meet industry standards while providing ease of movement and practicality. With options for customization and a variety of styles to choose from, our work wear is perfect for industries like construction, manufacturing, and more. Equip your team with clothing that not only safeguards them but also boosts productivity and confidence on the job.
+                </p>
+            </div>
+
+            <ul class="cards-items">
+                <li class="card">
+                    <a class="card-image" href="./work_wear/general_purpose.html">
+                        <img src="./assets/img/03112801.jpg" alt="Gloves" />
+                    </a>
+                    <a class="card-description" href="./work_wear/general_purpose.html">
+                        <h5>General Purpose</h5>
+                    </a>
+                </li>
+
+                <li class="card">
+                    <a class="card-image" href="./work_wear/specialsit.html">
+                        <img src="./assets/img/img1.jpeg" alt="Gloves" />
+                    </a>
+                    <a class="card-description" href="./work_wear/specialsit.html">
+                        <h5>Specialist</h5>
+                    </a>
+                </li>
+
+                <li class="card">
+                    <a class="card-image" href="./work_wear/custom_made.html">
+                        <img src="./assets/img/custom_made.webp" alt="Gloves" />
+                    </a>
+                    <a class="card-description" href="./work_wear/custom_made.html">
+                        <h5>Custom Make</h5>
+                    </a>
+                </li>
+            </ul>
+        </secttion> -->
+
+    </main>
+
+    <!-- Script Js -->
+    <script src="script.js"></script>
+</body>
+
+</html>

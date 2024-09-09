@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Control Panel - Job Management</title>
+    <link rel="stylesheet" href="{{ url_for('serve_css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .career_role {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .career-card-container {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .career-card {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .career-card__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .career-card__icon {
+            margin-right: 10px;
+        }
+
+        .career-card__title {
+            font-size: 18px;
+        }
+
+        .career-card__content {
+            padding: 10px;
+            display: none;
+        }
+
+        .btn-add,
+        .btn-remove {
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-remove {
+            background-color: #f44336;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Control Panel - Manage Jobs</h2>
+    <form method="POST">
+        <input type="text" name="title" placeholder="Job Title" required><br>
+        <input type="text" name="icon" placeholder="Icon Class (e.g., ri-shopping-cart-2-line)" required><br>
+        <textarea name="key_requirements" placeholder="Key Requirements (one per line)" rows="4"
+            required></textarea><br>
+        <textarea name="qualifications" placeholder="Qualifications (one per line)" rows="4" required></textarea><br>
+        <input type="text" name="location" placeholder="Location" required><br>
+        <button type="submit" class="btn-add">Add Job</button>
+    </form>
+    <h3>Current Jobs</h3>
+    <ul>
+        {% for job in job_vacancies %}
+        <li>
+            {{ job.title }} - {{ job.location }}
+            <form method="POST" action="{{ url_for('remove_job', index=loop.index0) }}" style="display:inline;">
+                <button type="submit" class="btn-remove">Remove</button>
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
