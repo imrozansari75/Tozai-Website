@@ -793,26 +793,6 @@ video {
   font-weight: 600;
 }
 
-.leading-tight{
-  line-height: 1.25;
-}
-
-.leading-snug{
-  line-height: 1.375;
-}
-
-.leading-normal{
-  line-height: 1.5;
-}
-
-.leading-none{
-  line-height: 1;
-}
-
-.leading-10{
-  line-height: 2.5rem;
-}
-
 .text-\[\#161613\]{
   --tw-text-opacity: 1;
   color: rgb(22 22 19 / var(--tw-text-opacity));
