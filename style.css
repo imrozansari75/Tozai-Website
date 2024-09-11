@@ -470,6 +470,13 @@ a {
 }
 
 /* Career Cards */
+.carrer_role{
+  width: 91%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5;
+}
+
 .career-card-container {
   position: relative;
   width: 300px;
@@ -478,7 +485,7 @@ a {
 }
 
 .career-card {
-  background: #edebe3;
+  background: #ffffff;
   border-radius: 10px;
   border: 1px solid #d1d1d1;
   width: 100%;
@@ -538,11 +545,6 @@ a {
   /* Large enough to fit content */
   opacity: 1;
   transform: scaleY(1);
-}
-
-.career_role {
-  display: flex;
-  justify-content: left;
 }
 
 /* Tablet */

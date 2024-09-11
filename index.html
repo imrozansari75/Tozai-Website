@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Tailwind -->
     <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="{{ url_for('serve_css') }}">
     <title>Tozai Website</title>
 </head>
@@ -170,43 +171,40 @@
                 </div>
             </div>
 
-            <div class="career_role">
-                <!-- Card 1 -->
-                <!-- Merchandiser -->
-                <div class="career-card-container">
-                    <div class="career-card" onclick="toggleCard(this)">
-                        <div class="career-card__header">
-                            <div class="career-card__icon">
-                                <!-- <i class="fas fa-calculator fa-2x "></i> -->
-                                <i class="ri-shopping-cart-2-line ri-2x text-red-600"></i>
+            <div class="carrer_role px-4 py-8">
+                <!-- Card Container -->
+                <div class="grid gap-6 md:gap-10 justify-center md:grid-cols-2 lg:grid-cols-4">
+                    <!-- Card 1 -->
+                    <div class="career-card-container">
+                        <div class="career-card p-4 cursor-pointer" onclick="toggleCard(this)">
+                            <div class="career-card__header flex items-center mb-4">
+                                <div class="career-card__icon text-red-600 mr-4">
+                                    <i class="ri-shopping-cart-2-line ri-2x"></i>
+                                </div>
+                                <h4 class="career-card__title font-bold text-lg">Merchandiser</h4>
                             </div>
-                            <h4 class="career-card__title font-bold">Merchandiser</h4>
                         </div>
-                    </div>
-                    <div class="career-card__content">
-                        <h5 class="font-bold">Key Requirements</h3>
-                            <p>
-                            <ul class="list-disc list-inside">
+                        <div class="career-card__content p-4">
+                            <h5 class="font-bold text-md">Key Requirements</h5>
+                            <ul class="list-disc list-inside mb-4">
                                 <li>Inspect samples and prepare reports for quality control.</li>
                                 <li>Coordinate with departments and handle payments for order management.</li>
-                                <li>Identify new customers and oversea sales for business development.</li>
+                                <li>Identify new customers and oversee sales for business development.</li>
                             </ul>
-                            </p>
-                            <h5 class="font-bold">Qualifications</h5>
-                            <ul class="list-disc list-inside">
-                                <li>MBA Marketing with 1 to 2 years of experience in international sales amd marketing.
+                            <h5 class="font-bold text-md">Qualifications</h5>
+                            <ul class="list-disc list-inside mb-4">
+                                <li>MBA Marketing with 1 to 2 years of experience in international sales and marketing.
                                 </li>
                                 <li>Strong spoken English and coordination skills required.</li>
                             </ul>
-                            <h5 class="font-bold">Location</h5>
-                            <li class="list-none">Nariman Point, Mumbai</li>
-                            <button
-                                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-2 mb-2 rounded"
+                            <h5 class="font-bold text-md">Location</h5>
+                            <p>Nariman Point, Mumbai</p>
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-2 rounded"
                                 onclick="sendEmail()">Apply Now</button>
+                        </div>
                     </div>
-                </div>
 
-                <div class="career_role">
+                    <!-- Cards to add -->
                     <!-- {% for job in job_vacancies %} -->
                     <div class="career-card-container">
                         <div class="career-card" onclick="toggleCard(this)">
@@ -232,13 +230,18 @@
                             </ul>
                             <h5 class="font-bold">Location</h5>
                             <li class="list-none">{{ job.location }}</li>
-                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-2 mb-2 rounded" onclick="sendEmail()">Apply Now</button>
+                            <button
+                                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-2 mb-2 rounded"
+                                onclick="sendEmail()">Apply Now</button>
                         </div>
                     </div>
                     <!-- {% endfor %} -->
-                </div>   
-                
+                </div>
+
+
             </div>
+            </div>
+
         </section>
 
         <!-- Contact Us -->
