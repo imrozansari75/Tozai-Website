@@ -1,3 +1,13 @@
+<?php
+// Include database connection
+include './admin/db_connect.php';
+
+// Fetch careers data from the database
+$sql = "SELECT * FROM careers";
+$result = mysqli_query($connect, $sql);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -174,69 +184,39 @@
             <div class="carrer_role px-4 py-8">
                 <!-- Card Container -->
                 <div class="grid gap-6 md:gap-10 justify-center md:grid-cols-2 lg:grid-cols-4">
-                    <!-- Card 1 -->
-                    <div class="career-card-container">
-                        <div class="career-card p-4 cursor-pointer" onclick="toggleCard(this)">
-                            <div class="career-card__header flex items-center mb-4">
-                                <div class="career-card__icon text-red-600 mr-4">
-                                    <i class="ri-shopping-cart-2-line ri-2x"></i>
-                                </div>
-                                <h4 class="career-card__title font-bold text-lg">Merchandiser</h4>
-                            </div>
-                        </div>
-                        <div class="career-card__content p-4">
-                            <h5 class="font-bold text-md">Key Requirements</h5>
-                            <ul class="list-disc list-inside mb-4">
-                                <li>Inspect samples and prepare reports for quality control.</li>
-                                <li>Coordinate with departments and handle payments for order management.</li>
-                                <li>Identify new customers and oversee sales for business development.</li>
-                            </ul>
-                            <h5 class="font-bold text-md">Qualifications</h5>
-                            <ul class="list-disc list-inside mb-4">
-                                <li>MBA Marketing with 1 to 2 years of experience in international sales and marketing.
-                                </li>
-                                <li>Strong spoken English and coordination skills required.</li>
-                            </ul>
-                            <h5 class="font-bold text-md">Location</h5>
-                            <p>Nariman Point, Mumbai</p>
-                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-2 rounded"
-                                onclick="sendEmail()">Apply Now</button>
-                        </div>
-                    </div>
-
+                    
                     <!-- Cards to add -->
-                    <!-- {% for job in job_vacancies %} -->
-                    <div class="career-card-container">
-                        <div class="career-card" onclick="toggleCard(this)">
-                            <div class="career-card__header">
-                                <div class="career-card__icon">
-                                    <i class="{{ job.icon }} ri-2x text-red-600"></i>
-                                </div>
-                                <h4 class="career-card__title font-bold">{{ job.title }}</h4>
+                    <?php if (mysqli_num_rows($result) > 0): ?>
+                    <?php while ($row = mysqli_fetch_assoc($result)): ?>
+                <div class="career-card-container">
+                    <div class="career-card" onclick="toggleCard(this)">
+                        <div class="career-card__header">
+                            <div class="career-card__icon text-blue-500">
+                                <i class="fas fa-<?php echo htmlspecialchars($row['icon_class']); ?> fa-2x"></i>
+
                             </div>
-                        </div>
-                        <div class="career-card__content">
-                            <h5 class="font-bold">Key Requirements</h5>
-                            <ul class="list-disc list-inside">
-                                {% for req in job.key_requirements %}
-                                <li>{{ req }}</li>
-                                {% endfor %}
-                            </ul>
-                            <h5 class="font-bold">Qualifications</h5>
-                            <ul class="list-disc list-inside">
-                                {% for qual in job.qualifications %}
-                                <li>{{ qual }}</li>
-                                {% endfor %}
-                            </ul>
-                            <h5 class="font-bold">Location</h5>
-                            <li class="list-none">{{ job.location }}</li>
-                            <button
-                                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-2 mb-2 rounded"
-                                onclick="sendEmail()">Apply Now</button>
+                            <h2 class="career-card__title text-lg font-bold"><?php echo htmlspecialchars($row['title']); ?></h2>
                         </div>
                     </div>
-                    <!-- {% endfor %} -->
+                    <div class="career-card__content">
+                                        <h3 class="text-lg font-bold">Key Requirements</h3>
+                                        <ul class="list-disc list-inside">
+                                            <?php foreach (explode("\n", htmlspecialchars($row['requirements'])) as $requirement): ?>
+                                                <li><?php echo trim($requirement); ?></li>
+                                            <?php endforeach; ?>
+                                        </ul>
+                                        <h3 class="text-lg font-bold mt-4">Qualifications</h3>
+                                        <p><?php echo htmlspecialchars($row['qualifications']); ?></p>
+                                        <h3 class="text-lg font-bold mt-4">Location</h3>
+                                        <p><?php echo htmlspecialchars($row['location']); ?></p>
+                                        <button onclick="sendEmail()"
+                                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-2 mt-2 rounded">Apply Now</button>
+                                    </div>
                 </div>
+                <?php endwhile; ?>
+                    <?php else: ?>
+                        <p class="text-center">No career opportunities available at the moment.</p>
+                    <?php endif; ?>
 
 
             </div>
